@@ -1,7 +1,9 @@
-package org.example;
+package org.example.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.example.entities.Client;
+import org.example.entities.Planet;
 
 import java.time.LocalDateTime;
 

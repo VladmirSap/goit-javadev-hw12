@@ -1,52 +1,52 @@
-package org.example;
+package org.example.servicies;
 
-
+import org.example.entities.Planet;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import java.util.List;
 import org.hibernate.cfg.Configuration;
 
-import java.util.List;
-
-public class ClientCrudService {
-
+public class PlanetCrudService {
     private static SessionFactory factory;
 
     static {
-        factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Client.class).buildSessionFactory();
+        factory = new Configuration().configure("hibernate.cfg.xml")
+                .addAnnotatedClass(Planet.class)
+                .buildSessionFactory();
     }
 
-    public void save(Client client) {
+    public void save(Planet planet) {
         try (Session session = factory.getCurrentSession()) {
             session.beginTransaction();
-            session.save(client);
+            session.save(planet);
             session.getTransaction().commit();
         }
     }
 
-    public Client findById(Long id) {
+    public Planet findById(String id) {
         try (Session session = factory.getCurrentSession()) {
             session.beginTransaction();
-            Client client = session.get(Client.class, id);
+            Planet planet = session.get(Planet.class, id);
             session.getTransaction().commit();
-            return client;
+            return planet;
         }
     }
 
-    public List<Client> findAll() {
+    public List<Planet> findAll() {
         try (Session session = factory.getCurrentSession()) {
             session.beginTransaction();
-            List<Client> clients = session.createQuery("from Client", Client.class).getResultList();
+            List<Planet> planets = session.createQuery("from Planet", Planet.class).getResultList();
             session.getTransaction().commit();
-            return clients;
+            return planets;
         }
     }
 
-    public void delete(Long id) {
+    public void delete(String id) {
         try (Session session = factory.getCurrentSession()) {
             session.beginTransaction();
-            Client client = session.get(Client.class, id);
-            if (client != null) {
-                session.delete(client);
+            Planet planet = session.get(Planet.class, id);
+            if (planet != null) {
+                session.delete(planet);
             }
             session.getTransaction().commit();
         }

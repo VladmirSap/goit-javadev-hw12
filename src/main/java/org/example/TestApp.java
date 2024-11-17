@@ -1,5 +1,12 @@
 package org.example;
 
+import org.example.entities.Client;
+import org.example.entities.Planet;
+import org.example.entities.Ticket;
+import org.example.servicies.ClientCrudService;
+import org.example.servicies.PlanetCrudService;
+import org.example.servicies.TicketCrudService;
+
 import java.util.List;
 
 public class TestApp {
@@ -21,7 +28,7 @@ public class TestApp {
         planetService.save(mars);
 
         Planet venus = new Planet();
-        venus.setId("VENUS");
+        venus.setId("VEN");
         venus.setName("Venus");
         planetService.save(venus);
 
@@ -70,12 +77,16 @@ public class TestApp {
 
         System.out.println("All Clients:");
         List<Client> clients = clientService.findAll();
-        clients.forEach(client -> System.out.println(client.getName()));
+        clients.forEach(client -> {
+            System.out.println("Client ID: " + client.getId() + ", Client Name: " + client.getName());
+        });
 
 
         System.out.println("\nAll Planets:");
         List<Planet> planets = planetService.findAll();
-        planets.forEach(planet -> System.out.println(planet.getName()));
+        planets.forEach(planet -> {
+            System.out.println("Planet ID: " + planet.getId() + ", Planet Name: " + planet.getName());
+        });
 
 
         System.out.println("\nAll Tickets:");
