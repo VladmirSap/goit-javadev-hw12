@@ -1,7 +1,7 @@
 package org.example;
 
-import org.example.entities.Client;
-import org.example.servicies.ClientCrudService;
+import org.example.entity.Client;
+import org.example.service.ClientCrudService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

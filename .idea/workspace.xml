@@ -6,13 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fcd5a93b-25c4-47cf-9033-d66768f6af2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClientCrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servicies/ClientCrudService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Planet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PlanetCrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servicies/PlanetCrudService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TicketCrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servicies/TicketCrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servicies/ClientCrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ClientCrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servicies/PlanetCrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PlanetCrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servicies/TicketCrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/TicketCrudService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientCrudServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientCrudServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

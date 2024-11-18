@@ -1,11 +1,11 @@
 package org.example;
 
-import org.example.entities.Client;
-import org.example.entities.Planet;
-import org.example.entities.Ticket;
-import org.example.servicies.ClientCrudService;
-import org.example.servicies.PlanetCrudService;
-import org.example.servicies.TicketCrudService;
+import org.example.entity.Client;
+import org.example.entity.Planet;
+import org.example.entity.Ticket;
+import org.example.service.ClientCrudService;
+import org.example.service.PlanetCrudService;
+import org.example.service.TicketCrudService;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package org.example.servicies;
+package org.example.service;
 
-import org.example.entities.Client;
-import org.example.entities.Planet;
-import org.example.entities.Ticket;
+import org.example.entity.Client;
+import org.example.entity.Planet;
+import org.example.entity.Ticket;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
